@@ -1,0 +1,16 @@
+.darkModeBtn {
+    width: 100px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+
+    .darkMode {
+        justify-content: flex-start;
+    }
+
+    .lightMode {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,28 @@
+.header {
+    position: relative;
+    background-color: rgb(47, 47, 47);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    transition: box-shadow 0.5s ease;
+    z-index: 10;
+
+    &:hover {
+        box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.75);
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+    }
+}
+
