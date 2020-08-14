@@ -2,7 +2,6 @@ import React, {Component, Fragment} from 'react';
 import './App.scss';
 
 import {Header} from './components/Header/Header';
-// import {Cards} from './components/Cards/Cards';
 
 class App extends Component {
 
@@ -32,8 +31,7 @@ class App extends Component {
   render() {
       return (
         <Fragment>
-          <Header gray search onPrint={(text) => this.printSomething(text)} />
-          {/* <Cards data={this.data} /> */}
+          <Header gray />
         </Fragment>
       )
   }

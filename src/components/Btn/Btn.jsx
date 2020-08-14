@@ -8,30 +8,25 @@ import { GoCheck } from 'react-icons/go'; // roger that
 import { IoIosArrowUp } from 'react-icons/io'; // top
 
 
-const Btn = ({iconType}) => {
+const Btn = ({iconType, clickBtn}) => {
 
     const formula = () => {
 
-        if(iconType == 'FaUserCircle') {
+        if(iconType === 'FaUserCircle') {
             return <FaUserCircle></FaUserCircle>
-        } else if(iconType == 'WiMoonAltWaxingCrescent4') {
+        } else if(iconType === 'WiMoonAltWaxingCrescent4') {
             return <WiMoonAltWaxingCrescent4></WiMoonAltWaxingCrescent4>
-        } else if(iconType == 'IoIosArrowBack') {
+        } else if(iconType === 'IoIosArrowBack') {
             return <IoIosArrowBack></IoIosArrowBack>
-        } else if(iconType == 'GoCheck') {
+        } else if(iconType === 'GoCheck') {
             return <GoCheck></GoCheck>
         } else {
             return <IoIosArrowUp></IoIosArrowUp>
         }
-        
-        
     }
 
-    console.log(GoCheck())
-        
     return (
-        <div className="btn">
-            
+        <div className="btn" onClick={clickBtn}>
             {formula()}
         </div>
     )
